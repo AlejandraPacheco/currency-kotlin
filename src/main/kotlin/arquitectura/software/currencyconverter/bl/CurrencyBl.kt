@@ -1,5 +1,7 @@
 package arquitectura.software.currencyconverter.bl
 
+import arquitectura.software.currencyconverter.dao.repository.CurrencyRepository
+import arquitectura.software.currencyconverter.dao.Currency
 import arquitectura.software.currencyconverter.dto.ErrorServiceDto
 import arquitectura.software.currencyconverter.dto.ResponseServiceDto
 import arquitectura.software.currencyconverter.exception.ServiceException
@@ -14,10 +16,11 @@ import java.math.BigDecimal
 import org.springframework.beans.factory.annotation.Value
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import org.springframework.beans.factory.annotation.Autowired
 import java.util.*
 
 @Service
-class CurrencyBl {
+class CurrencyBl @Autowired constructor(private val currencyRepository: CurrencyRepository){
 
     companion object {
         val objectMapper = jacksonObjectMapper()
@@ -38,6 +41,13 @@ class CurrencyBl {
         }
         val response = invokeApi("$apiUrl?to=$to&from=$from&amount=$amount")
         val responseServiceDto = parseResponse(response)
+        val currency = Currency()
+        currency.currencyFrom = from
+        currency.currencyTo = to
+        currency.amount = amount
+        currency.date = Date()
+        currency.result = responseServiceDto.result
+        currencyRepository.save(currency)
         return responseServiceDto
     }
 

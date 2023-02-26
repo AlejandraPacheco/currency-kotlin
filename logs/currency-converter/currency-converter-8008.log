@@ -176,3 +176,95 @@ java.lang.RuntimeException: Error en el servicio de conversión de monedas
 }
 
 2023-02-26 01:57:29.212-0400 [http-nio-8008-exec-4]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-02-26 17:07:23.678-0400 [main]  INFO 6012 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 6012 (/home/ale/Documents/Arquitectura de Sofware/currency-converter/target/classes started by ale in /home/ale/Documents/Arquitectura de Sofware/currency-converter)
+2023-02-26 17:07:23.690-0400 [main]  INFO 6012 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 17:07:30.596-0400 [main]  INFO 6012 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-26 17:07:30.629-0400 [main]  INFO 6012 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-26 17:07:30.629-0400 [main]  INFO 6012 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-26 17:07:31.188-0400 [main]  INFO 6012 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-26 17:07:31.188-0400 [main]  INFO 6012 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 6848 ms
+2023-02-26 17:07:35.320-0400 [main]  INFO 6012 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-02-26 17:07:35.392-0400 [main]  INFO 6012 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 15.844 seconds (JVM running for 23.691)
+2023-02-26 17:07:51.663-0400 [http-nio-8008-exec-1]  INFO 6012 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 17:07:51.681-0400 [http-nio-8008-exec-1]  INFO 6012 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-02-26 17:07:51.718-0400 [http-nio-8008-exec-1]  INFO 6012 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 4 ms
+2023-02-26 17:07:51.947-0400 [http-nio-8008-exec-1]  INFO 6012 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de usd a eur con un monto de 100
+2023-02-26 17:07:51.948-0400 [http-nio-8008-exec-1] ERROR 6012 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-02-26 17:07:51.957-0400 [http-nio-8008-exec-1]  INFO 6012 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-02-26 17:07:54.819-0400 [http-nio-8008-exec-1]  INFO 6012 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-02-26 17:07:54.839-0400 [http-nio-8008-exec-1]  INFO 6012 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "USD",
+        "to": "EUR",
+        "amount": 100
+    },
+    "info": {
+        "timestamp": 1677445623,
+        "rate": 0.947805
+    },
+    "date": "2023-02-26",
+    "result": 94.7805
+}
+
+2023-02-26 17:07:54.853-0400 [http-nio-8008-exec-1]  INFO 6012 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-02-26 18:49:22.444-0400 [main]  INFO 16520 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 16520 (/home/ale/Documents/Arquitectura de Sofware/currency-converter/target/classes started by ale in /home/ale/Documents/Arquitectura de Sofware/currency-converter)
+2023-02-26 18:49:22.521-0400 [main]  INFO 16520 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 18:49:25.422-0400 [main]  INFO 16520 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 18:49:25.515-0400 [main]  INFO 16520 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2023-02-26 18:49:27.269-0400 [main]  INFO 16520 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-26 18:49:27.282-0400 [main]  INFO 16520 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-26 18:49:27.283-0400 [main]  INFO 16520 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-26 18:49:27.937-0400 [main]  INFO 16520 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-26 18:49:27.938-0400 [main]  INFO 16520 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 5142 ms
+2023-02-26 18:49:29.811-0400 [main]  INFO 16520 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-26 18:49:31.581-0400 [main]  INFO 16520 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-02-26 18:49:32.149-0400 [main]  INFO 16520 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-26 18:49:33.100-0400 [main]  INFO 16520 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-02-26 18:49:34.168-0400 [main]  INFO 16520 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-26 18:49:34.199-0400 [main]  INFO 16520 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 18:49:34.469-0400 [main]  WARN 16520 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-26 18:49:36.761-0400 [main]  INFO 16520 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-02-26 18:49:36.778-0400 [main]  INFO 16520 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 16.589 seconds (JVM running for 22.2)
+2023-02-26 19:26:02.416-0400 [SpringApplicationShutdownHook]  INFO 16520 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 19:26:18.062-0400 [main]  INFO 20523 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 20523 (/home/ale/Documents/Arquitectura de Sofware/currency-converter/target/classes started by ale in /home/ale/Documents/Arquitectura de Sofware/currency-converter)
+2023-02-26 19:26:18.069-0400 [main]  INFO 20523 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 19:26:20.104-0400 [main]  INFO 20523 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 19:26:20.228-0400 [main]  INFO 20523 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interfaces.
+2023-02-26 19:26:21.889-0400 [main]  INFO 20523 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-26 19:26:21.909-0400 [main]  INFO 20523 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-26 19:26:21.910-0400 [main]  INFO 20523 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-26 19:26:22.135-0400 [main]  INFO 20523 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-26 19:26:22.137-0400 [main]  INFO 20523 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3908 ms
+2023-02-26 19:26:22.746-0400 [main]  INFO 20523 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-26 19:26:22.832-0400 [main]  INFO 20523 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-02-26 19:26:23.171-0400 [main]  INFO 20523 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-26 19:26:23.645-0400 [main]  INFO 20523 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-02-26 19:26:24.635-0400 [main]  INFO 20523 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-26 19:26:24.701-0400 [main]  INFO 20523 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 19:26:25.496-0400 [main]  WARN 20523 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-26 19:26:27.287-0400 [main]  INFO 20523 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-02-26 19:26:27.306-0400 [main]  INFO 20523 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 10.617 seconds (JVM running for 12.421)
+2023-02-26 19:26:34.003-0400 [http-nio-8008-exec-1]  INFO 20523 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 19:26:34.004-0400 [http-nio-8008-exec-1]  INFO 20523 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-02-26 19:26:34.007-0400 [http-nio-8008-exec-1]  INFO 20523 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 3 ms
+2023-02-26 19:26:34.103-0400 [http-nio-8008-exec-1]  INFO 20523 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de usd a eur con un monto de 100
+2023-02-26 19:26:34.104-0400 [http-nio-8008-exec-1] ERROR 20523 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-02-26 19:26:34.112-0400 [http-nio-8008-exec-1]  INFO 20523 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-02-26 19:26:36.797-0400 [http-nio-8008-exec-1]  INFO 20523 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-02-26 19:26:36.801-0400 [http-nio-8008-exec-1]  INFO 20523 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "USD",
+        "to": "EUR",
+        "amount": 100
+    },
+    "info": {
+        "timestamp": 1677453963,
+        "rate": 0.94766
+    },
+    "date": "2023-02-26",
+    "result": 94.766
+}
+
+2023-02-26 19:26:36.802-0400 [http-nio-8008-exec-1]  INFO 20523 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
