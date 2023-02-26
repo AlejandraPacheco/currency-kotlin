@@ -1,0 +1,178 @@
+2023-02-26 01:48:35.855-0400 [main]  INFO 41415 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 41415 (/home/ale/Documents/Arquitectura de Sofware/currency-converter/target/classes started by ale in /home/ale/Documents/Arquitectura de Sofware/currency-converter)
+2023-02-26 01:48:35.867-0400 [main]  INFO 41415 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 01:48:39.450-0400 [main]  INFO 41415 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 01:48:39.503-0400 [main]  INFO 41415 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2023-02-26 01:48:41.175-0400 [main]  INFO 41415 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-26 01:48:41.193-0400 [main]  INFO 41415 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-26 01:48:41.194-0400 [main]  INFO 41415 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-26 01:48:41.556-0400 [main]  INFO 41415 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-26 01:48:41.557-0400 [main]  INFO 41415 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 5452 ms
+2023-02-26 01:48:41.778-0400 [main]  WARN 41415 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-26 01:48:41.786-0400 [main]  INFO 41415 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-02-26 01:48:41.865-0400 [main]  INFO 41415 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-26 01:48:41.896-0400 [main] ERROR 41415 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-26 01:49:15.680-0400 [main]  INFO 41651 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 41651 (/home/ale/Documents/Arquitectura de Sofware/currency-converter/target/classes started by ale in /home/ale/Documents/Arquitectura de Sofware/currency-converter)
+2023-02-26 01:49:15.686-0400 [main]  INFO 41651 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 01:49:17.316-0400 [main]  INFO 41651 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 01:49:17.363-0400 [main]  INFO 41651 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2023-02-26 01:49:18.694-0400 [main]  INFO 41651 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-26 01:49:18.714-0400 [main]  INFO 41651 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-26 01:49:18.715-0400 [main]  INFO 41651 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-26 01:49:18.892-0400 [main]  INFO 41651 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-26 01:49:18.893-0400 [main]  INFO 41651 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3084 ms
+2023-02-26 01:49:19.084-0400 [main]  WARN 41651 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-26 01:49:19.089-0400 [main]  INFO 41651 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-02-26 01:49:19.112-0400 [main]  INFO 41651 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-26 01:49:19.139-0400 [main] ERROR 41651 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-26 01:56:06.584-0400 [main]  INFO 42383 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 42383 (/home/ale/Documents/Arquitectura de Sofware/currency-converter/target/classes started by ale in /home/ale/Documents/Arquitectura de Sofware/currency-converter)
+2023-02-26 01:56:06.593-0400 [main]  INFO 42383 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 01:56:09.164-0400 [main]  INFO 42383 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-26 01:56:09.199-0400 [main]  INFO 42383 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-26 01:56:09.203-0400 [main]  INFO 42383 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-26 01:56:09.417-0400 [main]  INFO 42383 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-26 01:56:09.422-0400 [main]  INFO 42383 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2649 ms
+2023-02-26 01:56:11.657-0400 [main]  INFO 42383 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-02-26 01:56:11.676-0400 [main]  INFO 42383 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 6.379 seconds (JVM running for 8.209)
+2023-02-26 01:56:23.529-0400 [http-nio-8008-exec-1]  INFO 42383 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 01:56:23.530-0400 [http-nio-8008-exec-1]  INFO 42383 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-02-26 01:56:23.532-0400 [http-nio-8008-exec-1]  INFO 42383 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-02-26 01:56:23.631-0400 [http-nio-8008-exec-1]  INFO 42383 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de usd a eur con un monto de 1000
+2023-02-26 01:56:23.632-0400 [http-nio-8008-exec-1] ERROR 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-02-26 01:56:23.638-0400 [http-nio-8008-exec-1]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-02-26 01:56:25.748-0400 [http-nio-8008-exec-1]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-02-26 01:56:25.751-0400 [http-nio-8008-exec-1]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "USD",
+        "to": "EUR",
+        "amount": 1000
+    },
+    "info": {
+        "timestamp": 1677390963,
+        "rate": 0.944804
+    },
+    "date": "2023-02-26",
+    "result": 944.804
+}
+
+2023-02-26 01:56:25.751-0400 [http-nio-8008-exec-1]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-02-26 01:57:08.174-0400 [http-nio-8008-exec-3]  INFO 42383 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de usd a eur con un monto de 100
+2023-02-26 01:57:08.174-0400 [http-nio-8008-exec-3] ERROR 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-02-26 01:57:08.175-0400 [http-nio-8008-exec-3]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-02-26 01:57:18.434-0400 [http-nio-8008-exec-3] ERROR 42383 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:55)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:39)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-02-26 01:57:21.492-0400 [http-nio-8008-exec-4]  INFO 42383 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de usd a eur con un monto de 100
+2023-02-26 01:57:21.493-0400 [http-nio-8008-exec-4] ERROR 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-02-26 01:57:21.493-0400 [http-nio-8008-exec-4]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-02-26 01:57:29.211-0400 [http-nio-8008-exec-4]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-02-26 01:57:29.212-0400 [http-nio-8008-exec-4]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "USD",
+        "to": "EUR",
+        "amount": 100
+    },
+    "info": {
+        "timestamp": 1677391023,
+        "rate": 0.944804
+    },
+    "date": "2023-02-26",
+    "result": 94.4804
+}
+
+2023-02-26 01:57:29.212-0400 [http-nio-8008-exec-4]  INFO 42383 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
