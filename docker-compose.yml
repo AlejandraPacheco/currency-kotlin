@@ -1,0 +1,23 @@
+version: "2.4"
+services:
+  postgres:
+    image: postgres:15
+    mem_limit: 1024m
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - /home/ale/Desktop/postgres-arqui-2:/var/lib/postgresql/data
+  currency-converter:
+    image: currency:2.0.0
+    restart: always
+    mem_limit: 512m
+    ports:
+      - "8008:8008"
+    environment:
+      URL: "${POSTGRES_URL}"
+      API_KEY: "${API_KEY}"
+    depends_on:
+      - postgres

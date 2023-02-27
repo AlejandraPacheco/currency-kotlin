@@ -1,5 +1,5 @@
 api:
-  key: v4uy0dBrehQBvz7fDuf7bpw44AUxkfHU
+  key: PON TU API KEY AQUI
   url: "https://api.apilayer.com/exchangerates_data/convert"
 
 server:
@@ -8,9 +8,9 @@ server:
 spring:
   datasource:
     type: org.postgresql.jdbc2.optional.SimpleDataSource
-    username: postgres
-    password: mysecretpassword
-    url: jdbc:postgresql://localhost:5432/software
+    username: ${USERNAME:postgres}
+    password: ${PASSWORD:mysecretpassword}
+    url: ${URL:jdbc:postgresql://localhost:5432/software}
   jpa:
     hibernate:
       ddl-auto: update
