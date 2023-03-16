@@ -1,1 +1,1 @@
-GET http://localhost:8008/api/currency/exchange?to=eur&from=bob&amount=120
+GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=1233
