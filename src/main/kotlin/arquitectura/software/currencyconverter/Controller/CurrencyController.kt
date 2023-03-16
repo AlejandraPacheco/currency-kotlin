@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController
     @GetMapping("/paginas")
 
     fun paginas(@RequestParam (defaultValue = "0") page: Int,
-                @RequestParam (defaultValue = "10") size: Int,
+                @RequestParam (defaultValue = "5") size: Int,
                 @RequestParam (defaultValue = "id") sort: String,
                 @RequestParam (defaultValue = true.toString()) asc: Boolean):
             ResponseEntity<Page<Currency>> {
