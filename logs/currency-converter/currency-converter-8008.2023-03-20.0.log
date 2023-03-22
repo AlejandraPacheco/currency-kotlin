@@ -1,0 +1,396 @@
+2023-03-20 09:51:40.210-0400 [main]  INFO 24090 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 24090 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-20 09:51:40.295-0400 [main]  INFO 24090 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-20 09:51:45.210-0400 [main]  INFO 24090 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-20 09:51:45.404-0400 [main]  INFO 24090 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interfaces.
+2023-03-20 09:51:47.687-0400 [main]  INFO 24090 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-20 09:51:47.720-0400 [main]  INFO 24090 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-20 09:51:47.721-0400 [main]  INFO 24090 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-20 09:51:48.331-0400 [main]  INFO 24090 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-20 09:51:48.332-0400 [main]  INFO 24090 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 7282 ms
+2023-03-20 09:51:49.465-0400 [main]  INFO 24090 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-20 09:51:49.729-0400 [main]  INFO 24090 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-20 09:51:50.438-0400 [main]  INFO 24090 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-20 09:51:52.182-0400 [main]  INFO 24090 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-20 09:51:55.786-0400 [main]  INFO 24090 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-20 09:51:55.825-0400 [main]  INFO 24090 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 09:51:56.936-0400 [main]  WARN 24090 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-20 09:51:58.789-0400 [main]  INFO 24090 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-20 09:51:58.816-0400 [main]  INFO 24090 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 24.359 seconds (JVM running for 29.495)
+2023-03-20 10:05:55.223-0400 [SpringApplicationShutdownHook]  INFO 24090 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 10:08:06.950-0400 [main]  INFO 25098 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 25098 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-20 10:08:06.957-0400 [main]  INFO 25098 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-20 10:08:09.761-0400 [main]  INFO 25098 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-20 10:08:09.892-0400 [main]  INFO 25098 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interfaces.
+2023-03-20 10:08:11.636-0400 [main]  INFO 25098 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-20 10:08:11.657-0400 [main]  INFO 25098 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-20 10:08:11.658-0400 [main]  INFO 25098 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-20 10:08:12.014-0400 [main]  INFO 25098 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-20 10:08:12.015-0400 [main]  INFO 25098 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4876 ms
+2023-03-20 10:08:12.847-0400 [main]  INFO 25098 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-20 10:08:14.443-0400 [main]  INFO 25098 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-20 10:08:15.004-0400 [main]  INFO 25098 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-20 10:08:16.443-0400 [main]  INFO 25098 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-20 10:08:17.767-0400 [main]  INFO 25098 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-20 10:08:17.799-0400 [main]  INFO 25098 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 10:08:18.579-0400 [main]  WARN 25098 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-20 10:08:20.405-0400 [main]  INFO 25098 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-20 10:08:20.422-0400 [main]  INFO 25098 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 15.664 seconds (JVM running for 16.985)
+2023-03-20 10:10:23.429-0400 [http-nio-8008-exec-1]  INFO 25098 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-20 10:10:23.451-0400 [http-nio-8008-exec-1]  INFO 25098 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-20 10:10:23.455-0400 [http-nio-8008-exec-1]  INFO 25098 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 3 ms
+2023-03-20 10:11:01.911-0400 [http-nio-8008-exec-3]  INFO 25098 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a USD con un monto de 1919
+2023-03-20 10:11:01.973-0400 [http-nio-8008-exec-3] ERROR 25098 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-20 10:11:02.003-0400 [http-nio-8008-exec-3]  INFO 25098 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-20 10:11:06.388-0400 [http-nio-8008-exec-3]  INFO 25098 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-20 10:11:06.392-0400 [http-nio-8008-exec-3]  INFO 25098 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "BOB",
+        "to": "USD",
+        "amount": 1919
+    },
+    "info": {
+        "timestamp": 1679321463,
+        "rate": 0.144832
+    },
+    "date": "2023-03-20",
+    "result": 277.932608
+}
+
+2023-03-20 10:11:06.393-0400 [http-nio-8008-exec-3]  INFO 25098 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-20 10:30:48.330-0400 [http-nio-8008-exec-8] ERROR 25098 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Page index must not be less than zero] with root cause
+
+java.lang.IllegalArgumentException: Page index must not be less than zero
+	at org.springframework.data.domain.AbstractPageRequest.<init>(AbstractPageRequest.java:45)
+	at org.springframework.data.domain.PageRequest.<init>(PageRequest.java:45)
+	at org.springframework.data.domain.PageRequest.of(PageRequest.java:72)
+	at arquitectura.software.currencyconverter.Controller.CurrencyController.paginas(CurrencyController.kt:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-20 10:38:57.082-0400 [SpringApplicationShutdownHook]  INFO 25098 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 18:57:00.122-0400 [main]  INFO 57761 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 57761 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-20 18:57:00.156-0400 [main]  INFO 57761 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-20 18:57:05.432-0400 [main]  INFO 57761 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-20 18:57:05.632-0400 [main]  INFO 57761 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interfaces.
+2023-03-20 18:57:08.894-0400 [main]  INFO 57761 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-20 18:57:08.975-0400 [main]  INFO 57761 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-20 18:57:08.976-0400 [main]  INFO 57761 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-20 18:57:09.577-0400 [main]  INFO 57761 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-20 18:57:09.578-0400 [main]  INFO 57761 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 9120 ms
+2023-03-20 18:57:10.666-0400 [main]  INFO 57761 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-20 18:57:11.169-0400 [main]  INFO 57761 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-20 18:57:12.553-0400 [main]  INFO 57761 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-20 18:57:13.190-0400 [main]  WARN 57761 --- [o.h.e.j.e.i.JdbcEnvironmentInitiator    ] : HHH000342: Could not obtain connection to query metadata
+
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at org.postgresql.ds.common.BaseDataSource.getConnection(BaseDataSource.java:103)
+	at org.postgresql.ds.common.BaseDataSource.getConnection(BaseDataSource.java:87)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at arquitectura.software.currencyconverter.CurrencyConverterApplicationKt.main(CurrencyConverterApplication.kt:13)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 47 common frames omitted
+
+2023-03-20 18:57:13.197-0400 [main] ERROR 57761 --- [j.LocalContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-03-20 18:57:13.201-0400 [main]  WARN 57761 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-03-20 18:57:13.214-0400 [main]  INFO 57761 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-03-20 18:57:13.275-0400 [main]  INFO 57761 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-20 18:57:13.384-0400 [main] ERROR 57761 --- [o.s.boot.SpringApplication              ] : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at arquitectura.software.currencyconverter.CurrencyConverterApplicationKt.main(CurrencyConverterApplication.kt:13)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:284)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	... 33 common frames omitted
+
+2023-03-20 18:59:17.192-0400 [main]  INFO 58180 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 58180 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-20 18:59:17.208-0400 [main]  INFO 58180 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-20 18:59:29.929-0400 [main]  INFO 58180 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-20 18:59:30.391-0400 [main]  INFO 58180 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 404 ms. Found 1 JPA repository interfaces.
+2023-03-20 18:59:34.526-0400 [main]  INFO 58180 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-20 18:59:34.666-0400 [main]  INFO 58180 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-20 18:59:34.667-0400 [main]  INFO 58180 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-20 18:59:35.263-0400 [main]  INFO 58180 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-20 18:59:35.264-0400 [main]  INFO 58180 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 17664 ms
+2023-03-20 18:59:36.521-0400 [main]  INFO 58180 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-20 18:59:36.855-0400 [main]  INFO 58180 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-20 18:59:37.583-0400 [main]  INFO 58180 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-20 18:59:39.090-0400 [main]  INFO 58180 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-20 18:59:46.234-0400 [main]  INFO 58180 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-20 18:59:46.301-0400 [main]  INFO 58180 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 18:59:48.116-0400 [main]  WARN 58180 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-20 18:59:51.914-0400 [main]  WARN 58180 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8008 is already in use
+2023-03-20 18:59:51.920-0400 [main]  INFO 58180 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 18:59:51.985-0400 [main]  INFO 58180 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-03-20 18:59:52.059-0400 [main]  INFO 58180 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-20 18:59:52.347-0400 [main] ERROR 58180 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8008 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8008 or configure this application to listen on another port.
+
+2023-03-20 19:28:22.516-0400 [main]  INFO 60663 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 60663 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-20 19:28:22.554-0400 [main]  INFO 60663 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-20 19:28:28.313-0400 [main]  INFO 60663 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-20 19:28:28.471-0400 [main]  INFO 60663 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interfaces.
+2023-03-20 19:28:31.166-0400 [main]  INFO 60663 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-20 19:28:31.238-0400 [main]  INFO 60663 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-20 19:28:31.239-0400 [main]  INFO 60663 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-20 19:28:31.571-0400 [main]  INFO 60663 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-20 19:28:31.572-0400 [main]  INFO 60663 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 8697 ms
+2023-03-20 19:28:32.986-0400 [main]  INFO 60663 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-20 19:28:33.294-0400 [main]  INFO 60663 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-20 19:28:35.173-0400 [main]  INFO 60663 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-20 19:28:36.491-0400 [main]  INFO 60663 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-20 19:28:39.783-0400 [main]  INFO 60663 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-20 19:28:39.839-0400 [main]  INFO 60663 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 19:28:41.953-0400 [main]  WARN 60663 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-20 19:28:45.069-0400 [main]  INFO 60663 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-20 19:28:45.103-0400 [main]  INFO 60663 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 25.68 seconds (JVM running for 28.378)
+2023-03-20 19:28:56.510-0400 [http-nio-8008-exec-1]  INFO 60663 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-20 19:28:56.511-0400 [http-nio-8008-exec-1]  INFO 60663 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-20 19:28:56.513-0400 [http-nio-8008-exec-1]  INFO 60663 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-03-20 19:28:56.670-0400 [http-nio-8008-exec-1]  INFO 60663 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de usd a eur con un monto de 1333
+2023-03-20 19:28:56.671-0400 [http-nio-8008-exec-1] ERROR 60663 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-20 19:28:56.746-0400 [http-nio-8008-exec-1]  INFO 60663 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-20 19:29:01.257-0400 [http-nio-8008-exec-1]  INFO 60663 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-20 19:29:01.263-0400 [http-nio-8008-exec-1]  INFO 60663 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "USD",
+        "to": "EUR",
+        "amount": 1333
+    },
+    "info": {
+        "timestamp": 1679354883,
+        "rate": 0.932599
+    },
+    "date": "2023-03-20",
+    "result": 1243.154467
+}
+
+2023-03-20 19:29:01.264-0400 [http-nio-8008-exec-1]  INFO 60663 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-20 19:54:19.226-0400 [SpringApplicationShutdownHook]  INFO 60663 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 19:57:02.088-0400 [main]  INFO 62085 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 62085 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-20 19:57:02.227-0400 [main]  INFO 62085 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-20 19:57:04.960-0400 [main]  INFO 62085 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-20 19:57:05.087-0400 [main]  INFO 62085 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interfaces.
+2023-03-20 19:57:07.694-0400 [main]  INFO 62085 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-20 19:57:07.737-0400 [main]  INFO 62085 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-20 19:57:07.738-0400 [main]  INFO 62085 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-20 19:57:07.921-0400 [main]  INFO 62085 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-20 19:57:07.922-0400 [main]  INFO 62085 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 5506 ms
+2023-03-20 19:57:09.389-0400 [main]  INFO 62085 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-20 19:57:10.417-0400 [main]  INFO 62085 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-20 19:57:11.246-0400 [main]  INFO 62085 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-20 19:57:13.293-0400 [main]  INFO 62085 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-20 19:57:15.155-0400 [main]  INFO 62085 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-20 19:57:15.194-0400 [main]  INFO 62085 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 19:57:15.946-0400 [main]  WARN 62085 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-20 19:57:17.803-0400 [main]  INFO 62085 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-20 19:57:17.831-0400 [main]  INFO 62085 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 19.229 seconds (JVM running for 21.274)
+2023-03-20 19:57:52.748-0400 [http-nio-8008-exec-1]  INFO 62085 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-20 19:57:52.762-0400 [http-nio-8008-exec-1]  INFO 62085 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-20 19:57:52.764-0400 [http-nio-8008-exec-1]  INFO 62085 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-03-20 20:46:51.603-0400 [SpringApplicationShutdownHook]  INFO 62085 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 20:47:47.087-0400 [main]  INFO 65415 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 65415 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-20 20:47:47.111-0400 [main]  INFO 65415 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-20 20:47:50.445-0400 [main]  INFO 65415 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-20 20:47:50.642-0400 [main]  INFO 65415 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interfaces.
+2023-03-20 20:47:53.461-0400 [main]  INFO 65415 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-20 20:47:53.522-0400 [main]  INFO 65415 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-20 20:47:53.523-0400 [main]  INFO 65415 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-20 20:47:53.695-0400 [main]  INFO 65415 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-20 20:47:53.695-0400 [main]  INFO 65415 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 6375 ms
+2023-03-20 20:47:55.752-0400 [main]  INFO 65415 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-20 20:47:55.992-0400 [main]  INFO 65415 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-20 20:47:56.565-0400 [main]  INFO 65415 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-20 20:47:58.204-0400 [main]  INFO 65415 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-20 20:47:59.535-0400 [main]  INFO 65415 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-20 20:47:59.582-0400 [main]  INFO 65415 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20 20:48:00.476-0400 [main]  WARN 65415 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-20 20:48:02.362-0400 [main]  INFO 65415 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-20 20:48:02.379-0400 [main]  INFO 65415 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 17.452 seconds (JVM running for 18.472)
+2023-03-20 20:48:15.619-0400 [http-nio-8008-exec-1]  INFO 65415 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-20 20:48:15.620-0400 [http-nio-8008-exec-1]  INFO 65415 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-20 20:48:15.622-0400 [http-nio-8008-exec-1]  INFO 65415 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-03-20 20:48:15.704-0400 [http-nio-8008-exec-1]  INFO 65415 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de usd a eur con un monto de 1333
+2023-03-20 20:48:15.704-0400 [http-nio-8008-exec-1] ERROR 65415 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-20 20:48:15.712-0400 [http-nio-8008-exec-1]  INFO 65415 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-20 20:48:17.320-0400 [http-nio-8008-exec-1]  INFO 65415 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-20 20:48:17.324-0400 [http-nio-8008-exec-1]  INFO 65415 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "USD",
+        "to": "EUR",
+        "amount": 1333
+    },
+    "info": {
+        "timestamp": 1679359683,
+        "rate": 0.93301
+    },
+    "date": "2023-03-21",
+    "result": 1243.70233
+}
+
+2023-03-20 20:48:17.324-0400 [http-nio-8008-exec-1]  INFO 65415 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-20 21:03:45.596-0400 [SpringApplicationShutdownHook]  INFO 65415 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'

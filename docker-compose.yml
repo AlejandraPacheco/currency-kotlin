@@ -11,7 +11,7 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - /home/ale/Desktop/postgres-arqui-2:/var/lib/postgresql/data
   currency-converter:
-    image: currency:2.5.0
+    image: currency:2.6.3
     restart: always
     mem_limit: 512m
     ports:
@@ -22,6 +22,6 @@ services:
     depends_on:
       - postgres
   angular:
-    image: angular-software:3.0.2-docker
+    image: angular-software:3.1.4-docker
     ports:
         - "4200:80"

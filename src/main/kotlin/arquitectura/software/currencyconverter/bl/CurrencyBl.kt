@@ -17,6 +17,8 @@ import org.springframework.beans.factory.annotation.Value
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.Pageable
 import java.util.*
 
 @Service
@@ -77,5 +79,9 @@ class CurrencyBl @Autowired constructor(private val currencyRepository: Currency
         LOGGER.info("El servicio de conversión de monedas fue fallido")
         val errorService = objectMapper.readValue<ErrorServiceDto>(body)
         throw ServiceException("Code: ${errorService.error.code}, message: ${errorService.error.message}")
+    }
+
+    fun paginas(pageable: Pageable): Page<Currency> {
+        return currencyRepository.findAll(pageable)
     }
 }
