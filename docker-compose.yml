@@ -10,8 +10,10 @@ services:
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - /home/ale/Desktop/postgres-arqui-2:/var/lib/postgresql/data
+    networks:
+      - ale-network
   currency-converter:
-    image: currency:2.6.3
+    image: currency:2.7.0
     restart: always
     mem_limit: 512m
     ports:
@@ -21,7 +23,19 @@ services:
       API_KEY: "${API_KEY}"
     depends_on:
       - postgres
+    networks:
+      - ale-network
   angular:
-    image: angular-software:3.1.4-docker
+    image: angular-software:3.2.0-docker
     ports:
-        - "4200:80"
+      - "4200:80"
+    networks:
+      - ale-network
+networks:
+  ale-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.15.0.0/16
+          gateway: 172.15.0.1

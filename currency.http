@@ -1,5 +1,6 @@
 ##
 GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=432
 
+
 ### Paginacion
 GET http://localhost:8008/api/currency/paginas
