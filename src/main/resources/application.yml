@@ -26,10 +26,10 @@ keycloak:
   resource: backend
   ssl-required: external
   use-resource-role-mappings: false
-  security-constraints:
-    - authRoles:
-        - ADMIN
-      securityCollections:
-        - name: ADMINISTRADOR
-          patterns:
-            - /api/currency/paginas
+#  security-constraints:
+#    - authRoles:
+#        - ADMIN
+#      securityCollections:
+#        - name: ADMINISTRADOR
+#          patterns:
+#            - /api/currency/paginas
