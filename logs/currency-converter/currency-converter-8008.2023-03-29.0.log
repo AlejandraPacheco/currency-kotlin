@@ -1,0 +1,1174 @@
+2023-03-29 00:02:50.060-0400 [main]  INFO 38370 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 38370 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-29 00:02:50.086-0400 [main]  INFO 38370 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 00:02:54.519-0400 [main]  INFO 38370 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-29 00:02:54.608-0400 [main]  INFO 38370 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
+2023-03-29 00:02:56.881-0400 [main]  INFO 38370 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-29 00:02:56.949-0400 [main]  INFO 38370 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-29 00:02:56.949-0400 [main]  INFO 38370 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-29 00:02:57.100-0400 [main]  INFO 38370 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-29 00:02:57.100-0400 [main]  INFO 38370 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 6872 ms
+2023-03-29 00:02:57.850-0400 [main]  INFO 38370 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-29 00:02:58.111-0400 [main]  INFO 38370 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-29 00:02:58.596-0400 [main]  INFO 38370 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-29 00:02:59.863-0400 [main]  INFO 38370 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-29 00:03:01.048-0400 [main]  INFO 38370 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-29 00:03:01.087-0400 [main]  INFO 38370 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 00:03:01.855-0400 [main]  WARN 38370 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 00:03:03.996-0400 [main]  INFO 38370 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-29 00:03:04.012-0400 [main]  INFO 38370 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 16.588 seconds (JVM running for 20.548)
+2023-03-29 00:03:16.177-0400 [http-nio-8008-exec-1]  INFO 38370 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8080/realms/software/.well-known/openid-configuration
+2023-03-29 00:03:48.546-0400 [http-nio-8008-exec-2]  INFO 38370 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 00:03:48.547-0400 [http-nio-8008-exec-2]  INFO 38370 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-29 00:03:48.548-0400 [http-nio-8008-exec-2]  INFO 38370 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-03-29 00:12:14.132-0400 [http-nio-8008-exec-6]  INFO 38370 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 1011
+2023-03-29 00:12:14.134-0400 [http-nio-8008-exec-6] ERROR 38370 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 00:12:14.213-0400 [http-nio-8008-exec-6]  INFO 38370 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 00:12:15.734-0400 [http-nio-8008-exec-6]  INFO 38370 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-29 00:12:15.736-0400 [http-nio-8008-exec-6]  INFO 38370 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "BOB",
+        "to": "EUR",
+        "amount": 1011
+    },
+    "info": {
+        "timestamp": 1680063122,
+        "rate": 0.133756
+    },
+    "date": "2023-03-29",
+    "result": 135.227316
+}
+
+2023-03-29 00:12:15.737-0400 [http-nio-8008-exec-6]  INFO 38370 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-29 00:18:36.929-0400 [SpringApplicationShutdownHook]  INFO 38370 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 00:19:29.514-0400 [main]  INFO 39078 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 39078 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-29 00:19:29.518-0400 [main]  INFO 39078 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 00:19:31.404-0400 [main]  INFO 39078 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-29 00:19:31.518-0400 [main]  INFO 39078 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+2023-03-29 00:19:33.410-0400 [main]  INFO 39078 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-29 00:19:33.449-0400 [main]  INFO 39078 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-29 00:19:33.450-0400 [main]  INFO 39078 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-29 00:19:33.633-0400 [main]  INFO 39078 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-29 00:19:33.633-0400 [main]  INFO 39078 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3896 ms
+2023-03-29 00:19:34.224-0400 [main]  INFO 39078 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-29 00:19:34.385-0400 [main]  INFO 39078 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-29 00:19:35.218-0400 [main]  INFO 39078 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-29 00:19:36.050-0400 [main]  INFO 39078 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-29 00:19:37.057-0400 [main]  INFO 39078 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-29 00:19:37.108-0400 [main]  INFO 39078 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 00:19:37.841-0400 [main]  WARN 39078 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 00:19:41.593-0400 [main]  INFO 39078 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-29 00:19:41.609-0400 [main]  INFO 39078 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 13.853 seconds (JVM running for 14.908)
+2023-03-29 00:20:23.824-0400 [http-nio-8008-exec-1]  INFO 39078 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 00:20:23.825-0400 [http-nio-8008-exec-1]  INFO 39078 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-29 00:20:23.828-0400 [http-nio-8008-exec-1]  INFO 39078 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-03-29 00:20:41.797-0400 [http-nio-8008-exec-4]  INFO 39078 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a USD con un monto de 98
+2023-03-29 00:20:41.798-0400 [http-nio-8008-exec-4] ERROR 39078 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 00:20:41.820-0400 [http-nio-8008-exec-4]  INFO 39078 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 00:20:43.783-0400 [http-nio-8008-exec-4]  INFO 39078 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-29 00:20:43.787-0400 [http-nio-8008-exec-4]  INFO 39078 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "BOB",
+        "to": "USD",
+        "amount": 98
+    },
+    "info": {
+        "timestamp": 1680063604,
+        "rate": 0.144922
+    },
+    "date": "2023-03-29",
+    "result": 14.202356
+}
+
+2023-03-29 00:20:43.788-0400 [http-nio-8008-exec-4]  INFO 39078 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-29 00:21:45.901-0400 [SpringApplicationShutdownHook]  INFO 39078 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 08:44:38.738-0400 [main]  INFO 6001 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 6001 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-29 08:44:38.748-0400 [main]  INFO 6001 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 08:44:40.785-0400 [main]  INFO 6001 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-29 08:44:40.896-0400 [main]  INFO 6001 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2023-03-29 08:44:42.945-0400 [main]  INFO 6001 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-29 08:44:43.010-0400 [main]  INFO 6001 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-29 08:44:43.011-0400 [main]  INFO 6001 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-29 08:44:43.173-0400 [main]  INFO 6001 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-29 08:44:43.173-0400 [main]  INFO 6001 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4220 ms
+2023-03-29 08:44:44.004-0400 [main]  INFO 6001 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-29 08:44:44.299-0400 [main]  INFO 6001 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-29 08:44:44.762-0400 [main]  INFO 6001 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-29 08:44:45.225-0400 [main]  WARN 6001 --- [o.h.e.j.e.i.JdbcEnvironmentInitiator    ] : HHH000342: Could not obtain connection to query metadata
+
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at org.postgresql.ds.common.BaseDataSource.getConnection(BaseDataSource.java:103)
+	at org.postgresql.ds.common.BaseDataSource.getConnection(BaseDataSource.java:87)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at arquitectura.software.currencyconverter.CurrencyConverterApplicationKt.main(CurrencyConverterApplication.kt:13)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 47 common frames omitted
+
+2023-03-29 08:44:45.229-0400 [main] ERROR 6001 --- [j.LocalContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-03-29 08:44:45.231-0400 [main]  WARN 6001 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-03-29 08:44:45.238-0400 [main]  INFO 6001 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-03-29 08:44:45.313-0400 [main]  INFO 6001 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-29 08:44:45.370-0400 [main] ERROR 6001 --- [o.s.boot.SpringApplication              ] : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at arquitectura.software.currencyconverter.CurrencyConverterApplicationKt.main(CurrencyConverterApplication.kt:13)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:284)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	... 33 common frames omitted
+
+2023-03-29 08:46:13.395-0400 [main]  INFO 6504 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 6504 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-29 08:46:13.399-0400 [main]  INFO 6504 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 08:46:14.643-0400 [main]  INFO 6504 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-29 08:46:14.732-0400 [main]  INFO 6504 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2023-03-29 08:46:15.977-0400 [main]  INFO 6504 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-29 08:46:15.993-0400 [main]  INFO 6504 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-29 08:46:15.993-0400 [main]  INFO 6504 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-29 08:46:16.145-0400 [main]  INFO 6504 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-29 08:46:16.146-0400 [main]  INFO 6504 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2603 ms
+2023-03-29 08:46:16.510-0400 [main]  INFO 6504 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-29 08:46:16.633-0400 [main]  INFO 6504 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-29 08:46:16.906-0400 [main]  INFO 6504 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-29 08:46:17.813-0400 [main]  INFO 6504 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-29 08:46:19.685-0400 [main]  INFO 6504 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-29 08:46:19.735-0400 [main]  INFO 6504 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 08:46:20.380-0400 [main]  WARN 6504 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 08:46:22.053-0400 [main]  INFO 6504 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-29 08:46:22.073-0400 [main]  INFO 6504 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 9.626 seconds (JVM running for 10.544)
+2023-03-29 08:48:33.868-0400 [http-nio-8008-exec-1]  INFO 6504 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8080/realms/software/.well-known/openid-configuration
+2023-03-29 08:48:50.919-0400 [http-nio-8008-exec-2]  INFO 6504 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 08:48:50.922-0400 [http-nio-8008-exec-2]  INFO 6504 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-29 08:48:50.925-0400 [http-nio-8008-exec-2]  INFO 6504 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-03-29 08:48:51.317-0400 [http-nio-8008-exec-3]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:48:51.318-0400 [http-nio-8008-exec-3] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:48:51.326-0400 [http-nio-8008-exec-3]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:49:01.561-0400 [http-nio-8008-exec-3] ERROR 6504 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 08:49:05.907-0400 [http-nio-8008-exec-5]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:49:05.908-0400 [http-nio-8008-exec-5] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:49:05.908-0400 [http-nio-8008-exec-5]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:49:05.917-0400 [http-nio-8008-exec-5] ERROR 6504 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 08:49:12.022-0400 [http-nio-8008-exec-7]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:49:12.025-0400 [http-nio-8008-exec-7] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:49:12.025-0400 [http-nio-8008-exec-7]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:49:19.706-0400 [http-nio-8008-exec-7] ERROR 6504 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 08:49:24.205-0400 [http-nio-8008-exec-9]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:49:24.206-0400 [http-nio-8008-exec-9] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:49:24.206-0400 [http-nio-8008-exec-9]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:49:24.213-0400 [http-nio-8008-exec-9] ERROR 6504 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 08:49:27.300-0400 [http-nio-8008-exec-10]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:49:27.301-0400 [http-nio-8008-exec-10] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:49:27.301-0400 [http-nio-8008-exec-10]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:49:27.308-0400 [http-nio-8008-exec-10] ERROR 6504 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 08:49:28.722-0400 [http-nio-8008-exec-1]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:49:28.724-0400 [http-nio-8008-exec-1] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:49:28.725-0400 [http-nio-8008-exec-1]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:49:28.731-0400 [http-nio-8008-exec-1] ERROR 6504 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 08:49:29.938-0400 [http-nio-8008-exec-3]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:49:29.948-0400 [http-nio-8008-exec-3] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:49:29.954-0400 [http-nio-8008-exec-3]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:50:13.002-0400 [http-nio-8008-exec-3] ERROR 6504 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 08:50:19.566-0400 [http-nio-8008-exec-5]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:50:19.570-0400 [http-nio-8008-exec-5] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:50:19.571-0400 [http-nio-8008-exec-5]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:50:29.587-0400 [http-nio-8008-exec-5] ERROR 6504 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 08:51:00.994-0400 [http-nio-8008-exec-6]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de usd a eur con un monto de 4447
+2023-03-29 08:51:00.995-0400 [http-nio-8008-exec-6] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:51:00.996-0400 [http-nio-8008-exec-6]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:51:01.983-0400 [http-nio-8008-exec-6]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-29 08:51:01.987-0400 [http-nio-8008-exec-6]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "USD",
+        "to": "EUR",
+        "amount": 4447
+    },
+    "info": {
+        "timestamp": 1680094203,
+        "rate": 0.92174
+    },
+    "date": "2023-03-29",
+    "result": 4098.97778
+}
+
+2023-03-29 08:51:01.988-0400 [http-nio-8008-exec-6]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-29 08:51:12.114-0400 [http-nio-8008-exec-9]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a EUR con un monto de 890
+2023-03-29 08:51:12.114-0400 [http-nio-8008-exec-9] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:51:12.115-0400 [http-nio-8008-exec-9]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:51:12.854-0400 [http-nio-8008-exec-9]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-29 08:51:12.855-0400 [http-nio-8008-exec-9]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "BOB",
+        "to": "EUR",
+        "amount": 890
+    },
+    "info": {
+        "timestamp": 1680094263,
+        "rate": 0.133406
+    },
+    "date": "2023-03-29",
+    "result": 118.73134
+}
+
+2023-03-29 08:51:12.855-0400 [http-nio-8008-exec-9]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-29 08:53:52.024-0400 [http-nio-8008-exec-4]  INFO 6504 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de USD a BOB con un monto de 1155
+2023-03-29 08:53:52.024-0400 [http-nio-8008-exec-4] ERROR 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 08:53:52.027-0400 [http-nio-8008-exec-4]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 08:53:52.547-0400 [http-nio-8008-exec-4]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-29 08:53:52.548-0400 [http-nio-8008-exec-4]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "USD",
+        "to": "BOB",
+        "amount": 1155
+    },
+    "info": {
+        "timestamp": 1680094383,
+        "rate": 6.908776
+    },
+    "date": "2023-03-29",
+    "result": 7979.63628
+}
+
+2023-03-29 08:53:52.548-0400 [http-nio-8008-exec-4]  INFO 6504 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-29 09:47:44.061-0400 [SpringApplicationShutdownHook]  INFO 6504 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 09:49:01.466-0400 [main]  INFO 8581 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 8581 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-29 09:49:01.471-0400 [main]  INFO 8581 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 09:49:03.561-0400 [main]  INFO 8581 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-29 09:49:03.735-0400 [main]  INFO 8581 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interfaces.
+2023-03-29 09:49:05.907-0400 [main]  INFO 8581 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-29 09:49:05.957-0400 [main]  INFO 8581 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-29 09:49:05.958-0400 [main]  INFO 8581 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-29 09:49:06.269-0400 [main]  INFO 8581 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-29 09:49:06.270-0400 [main]  INFO 8581 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4615 ms
+2023-03-29 09:49:06.434-0400 [main] ERROR 8581 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/paginas] the HTTP methods [OPTIONS] are uncovered.
+2023-03-29 09:49:06.904-0400 [main]  INFO 8581 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-29 09:49:07.123-0400 [main]  INFO 8581 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-29 09:49:07.571-0400 [main]  INFO 8581 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-29 09:49:08.607-0400 [main]  INFO 8581 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-29 09:49:09.542-0400 [main]  INFO 8581 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-29 09:49:09.560-0400 [main]  INFO 8581 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 09:49:10.255-0400 [main]  WARN 8581 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 09:49:12.324-0400 [main]  INFO 8581 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-29 09:49:12.345-0400 [main]  INFO 8581 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 12.679 seconds (JVM running for 13.705)
+2023-03-29 09:51:01.106-0400 [http-nio-8008-exec-1]  INFO 8581 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 09:51:01.106-0400 [http-nio-8008-exec-1]  INFO 8581 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-29 09:51:01.108-0400 [http-nio-8008-exec-1]  INFO 8581 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-03-29 09:51:01.966-0400 [http-nio-8008-exec-2]  INFO 8581 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8080/realms/software/.well-known/openid-configuration
+2023-03-29 09:51:24.432-0400 [http-nio-8008-exec-8]  INFO 8581 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de EUR a BOB con un monto de 1200
+2023-03-29 09:51:24.433-0400 [http-nio-8008-exec-8] ERROR 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 09:51:24.441-0400 [http-nio-8008-exec-8]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 09:51:25.710-0400 [http-nio-8008-exec-8]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-29 09:51:25.712-0400 [http-nio-8008-exec-8]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "EUR",
+        "to": "BOB",
+        "amount": 1200
+    },
+    "info": {
+        "timestamp": 1680097863,
+        "rate": 7.491639
+    },
+    "date": "2023-03-29",
+    "result": 8989.9668
+}
+
+2023-03-29 09:51:25.712-0400 [http-nio-8008-exec-8]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-29 15:05:36.084-0400 [http-nio-8008-exec-6]  INFO 8581 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a USD con un monto de 4411
+2023-03-29 15:05:36.289-0400 [http-nio-8008-exec-6] ERROR 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 15:05:36.328-0400 [http-nio-8008-exec-6]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 15:05:49.317-0400 [http-nio-8008-exec-6] ERROR 8581 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 15:05:56.235-0400 [http-nio-8008-exec-8]  INFO 8581 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a USD con un monto de 4411
+2023-03-29 15:05:56.238-0400 [http-nio-8008-exec-8] ERROR 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 15:05:56.238-0400 [http-nio-8008-exec-8]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 15:05:56.271-0400 [http-nio-8008-exec-8] ERROR 8581 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 15:05:58.265-0400 [http-nio-8008-exec-9]  INFO 8581 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a USD con un monto de 4411
+2023-03-29 15:05:58.269-0400 [http-nio-8008-exec-9] ERROR 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 15:05:58.270-0400 [http-nio-8008-exec-9]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 15:06:08.353-0400 [http-nio-8008-exec-9] ERROR 8581 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 15:06:13.537-0400 [http-nio-8008-exec-1]  INFO 8581 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a USD con un monto de 4411
+2023-03-29 15:06:13.538-0400 [http-nio-8008-exec-1] ERROR 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 15:06:13.539-0400 [http-nio-8008-exec-1]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 15:06:13.560-0400 [http-nio-8008-exec-1] ERROR 8581 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error en el servicio de conversión de monedas] with root cause
+
+java.lang.RuntimeException: Error en el servicio de conversión de monedas
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.invokeApi(CurrencyBl.kt:67)
+	at arquitectura.software.currencyconverter.bl.CurrencyBl.exchangeRate(CurrencyBl.kt:44)
+	at arquitectura.software.currencyconverter.api.CurrencyApi.exchangeRate(CurrencyApi.kt:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-03-29 15:06:21.121-0400 [http-nio-8008-exec-3]  INFO 8581 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a USD con un monto de 4411
+2023-03-29 15:06:21.125-0400 [http-nio-8008-exec-3] ERROR 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-29 15:06:21.125-0400 [http-nio-8008-exec-3]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-29 15:06:23.576-0400 [http-nio-8008-exec-3]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-29 15:06:23.600-0400 [http-nio-8008-exec-3]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "BOB",
+        "to": "USD",
+        "amount": 4411
+    },
+    "info": {
+        "timestamp": 1680116764,
+        "rate": 0.144743
+    },
+    "date": "2023-03-29",
+    "result": 638.461373
+}
+
+2023-03-29 15:06:23.600-0400 [http-nio-8008-exec-3]  INFO 8581 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-29 15:57:34.409-0400 [SpringApplicationShutdownHook]  INFO 8581 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 23:11:16.138-0400 [main]  INFO 23480 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 23480 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-29 23:11:16.141-0400 [main]  INFO 23480 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 23:11:18.194-0400 [main]  INFO 23480 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-29 23:11:18.301-0400 [main]  INFO 23480 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2023-03-29 23:11:20.344-0400 [main]  INFO 23480 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-29 23:11:20.380-0400 [main]  INFO 23480 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-29 23:11:20.381-0400 [main]  INFO 23480 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-29 23:11:20.560-0400 [main]  INFO 23480 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-29 23:11:20.561-0400 [main]  INFO 23480 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4229 ms
+2023-03-29 23:11:20.756-0400 [main] ERROR 23480 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/paginas] the HTTP methods [OPTIONS] are uncovered.
+2023-03-29 23:11:21.259-0400 [main]  INFO 23480 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-29 23:11:21.611-0400 [main]  INFO 23480 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-29 23:11:22.082-0400 [main]  INFO 23480 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-29 23:11:22.941-0400 [main]  INFO 23480 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-29 23:11:23.845-0400 [main]  INFO 23480 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-29 23:11:23.875-0400 [main]  INFO 23480 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-29 23:11:24.542-0400 [main]  WARN 23480 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 23:11:26.029-0400 [main]  INFO 23480 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-29 23:11:26.050-0400 [main]  INFO 23480 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 11.692 seconds (JVM running for 12.703)

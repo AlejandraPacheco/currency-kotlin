@@ -1,8 +1,9 @@
 ##
-GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=432
+GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=4447
 
 ### Docker
 GET http://localhost:4200/backend/api/currency/exchange?to=eur&from=usd&amount=432
 
 ### Paginacion
-GET http://localhost:8008/api/currency/paginas
+GET http://localhost:8008/api/currency/paginas?page=0&size=10&sort=id&asc=true
+Authorization: Bearer

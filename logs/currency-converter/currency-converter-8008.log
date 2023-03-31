@@ -1,1 +1,45 @@
-2023-03-23 11:36:03.180-0400 [SpringApplicationShutdownHook]  INFO 7781 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-31 00:56:30.540-0400 [main]  INFO 25975 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 25975 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-03-31 00:56:30.565-0400 [main]  INFO 25975 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-03-31 00:56:32.924-0400 [main]  INFO 25975 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-31 00:56:33.029-0400 [main]  INFO 25975 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interfaces.
+2023-03-31 00:56:35.072-0400 [main]  INFO 25975 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-03-31 00:56:35.142-0400 [main]  INFO 25975 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-03-31 00:56:35.143-0400 [main]  INFO 25975 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-31 00:56:35.293-0400 [main]  INFO 25975 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-03-31 00:56:35.294-0400 [main]  INFO 25975 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4432 ms
+2023-03-31 00:56:35.446-0400 [main] ERROR 25975 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/paginas] the HTTP methods [OPTIONS] are uncovered.
+2023-03-31 00:56:35.446-0400 [main] ERROR 25975 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/exchange] the HTTP methods [OPTIONS] are uncovered.
+2023-03-31 00:56:36.043-0400 [main]  INFO 25975 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-31 00:56:36.257-0400 [main]  INFO 25975 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-31 00:56:36.757-0400 [main]  INFO 25975 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-31 00:56:37.606-0400 [main]  INFO 25975 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-03-31 00:56:38.605-0400 [main]  INFO 25975 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-31 00:56:38.626-0400 [main]  INFO 25975 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-31 00:56:39.404-0400 [main]  WARN 25975 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-31 00:56:41.423-0400 [main]  INFO 25975 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-03-31 00:56:41.449-0400 [main]  INFO 25975 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 12.838 seconds (JVM running for 13.872)
+2023-03-31 01:06:59.443-0400 [http-nio-8008-exec-1]  INFO 25975 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31 01:06:59.463-0400 [http-nio-8008-exec-1]  INFO 25975 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-03-31 01:06:59.668-0400 [http-nio-8008-exec-1]  INFO 25975 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 204 ms
+2023-03-31 01:07:03.045-0400 [http-nio-8008-exec-2]  INFO 25975 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8080/realms/software/.well-known/openid-configuration
+2023-03-31 01:08:48.878-0400 [http-nio-8008-exec-5]  INFO 25975 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para convertir divisas de BOB a USD con un monto de 515
+2023-03-31 01:08:48.879-0400 [http-nio-8008-exec-5] ERROR 25975 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Iniciando logica para convertir divisas
+2023-03-31 01:08:48.885-0400 [http-nio-8008-exec-5]  INFO 25975 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Invocando servicio de conversión de monedas
+2023-03-31 01:08:50.590-0400 [http-nio-8008-exec-5]  INFO 25975 --- [a.s.currencyconverter.bl.CurrencyBl     ] : Parseando respuesta del servicio de conversión de monedas
+2023-03-31 01:08:50.593-0400 [http-nio-8008-exec-5]  INFO 25975 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas retorno => {
+    "success": true,
+    "query": {
+        "from": "BOB",
+        "to": "USD",
+        "amount": 515
+    },
+    "info": {
+        "timestamp": 1680239283,
+        "rate": 0.144699
+    },
+    "date": "2023-03-31",
+    "result": 74.519985
+}
+
+2023-03-31 01:08:50.593-0400 [http-nio-8008-exec-5]  INFO 25975 --- [a.s.currencyconverter.bl.CurrencyBl     ] : El servicio de conversión de monedas fue exitoso
+2023-03-31 01:15:52.601-0400 [SpringApplicationShutdownHook]  INFO 25975 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
