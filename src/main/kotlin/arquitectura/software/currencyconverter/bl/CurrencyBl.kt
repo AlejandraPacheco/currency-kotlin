@@ -37,7 +37,7 @@ class CurrencyBl @Autowired constructor(private val currencyRepository: Currency
     lateinit var apiKey: String
 
     fun exchangeRate(to: String, from: String, amount: BigDecimal): ResponseServiceDto? {
-        LOGGER.error("Iniciando logica para convertir divisas")
+        LOGGER.info("Iniciando logica para convertir divisas")
         if (amount < BigDecimal.ZERO) {
             LOGGER.error("El monto no puede ser negativo")
             throw IllegalArgumentException("El monto no puede ser negativo")

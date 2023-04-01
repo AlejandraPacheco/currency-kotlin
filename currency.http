@@ -1,27 +1,21 @@
-### Prueba de sobrecarga de peticiones
-GET http://localhost:8008/api/currency/exchange?to=bob&from=usd&amount=4005
+### P1
+GET http://localhost:8008/api/currency/exchange?to=bob&from=usd&amount=292
+### P2
+GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=393
+### P3
+GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=494
+### P4
+GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=595
+### P5
+GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=696
+### P6
+GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=797
+### P7
+GET http://localhost:8008/api/currency/exchange?to=eur&from=bob&amount=898
 
-###
-GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=4741
-
-###
-GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=4709
-
-###
-GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=507
-
-###
-GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=909
-
-###
-GET http://localhost:8008/api/currency/exchange?to=eur&from=usd&amount=5456
-
-###
-GET http://localhost:8008/api/currency/exchange?to=eur&from=bob&amount=989
-
-### Docker
-GET http://localhost:4200/backend/api/currency/exchange?to=eur&from=usd&amount=432
-
-### Paginacion
-GET http://localhost:8008/api/currency/paginas?page=0&size=10&sort=id&asc=true
-Authorization: Bearer
+#### Docker
+#GET http://localhost:4200/backend/api/currency/exchange?to=eur&from=usd&amount=432
+#
+#### Paginacion
+#GET http://localhost:8008/api/currency/paginas?page=0&size=10&sort=id&asc=true
+#Authorization: Bearer
