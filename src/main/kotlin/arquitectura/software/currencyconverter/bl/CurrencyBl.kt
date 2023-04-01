@@ -5,6 +5,7 @@ import arquitectura.software.currencyconverter.dao.Currency
 import arquitectura.software.currencyconverter.dto.ErrorServiceDto
 import arquitectura.software.currencyconverter.dto.ResponseServiceDto
 import arquitectura.software.currencyconverter.exception.ServiceException
+import arquitectura.software.currencyconverter.proxy.CurrencyApiProxy
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
@@ -35,7 +36,7 @@ class CurrencyBl @Autowired constructor(private val currencyRepository: Currency
     @Value("\${api.key}")
     lateinit var apiKey: String
 
-    fun exchangeRate(to: String, from: String, amount: BigDecimal): ResponseServiceDto {
+    fun exchangeRate(to: String, from: String, amount: BigDecimal): ResponseServiceDto? {
         LOGGER.error("Iniciando logica para convertir divisas")
         if (amount < BigDecimal.ZERO) {
             LOGGER.error("El monto no puede ser negativo")
@@ -48,7 +49,7 @@ class CurrencyBl @Autowired constructor(private val currencyRepository: Currency
         currency.currencyTo = to
         currency.amount = amount
         currency.date = Date()
-        currency.result = responseServiceDto.result
+        currency.result = responseServiceDto.result!!
         currencyRepository.save(currency)
         return responseServiceDto
     }

@@ -35,11 +35,11 @@ keycloak:
             - OPTIONS
           patterns:
             - /api/currency/paginas
-    - authRoles:
-        - USER
-      securityCollections:
-        - name: SERVICIOS DE USUARIO
-          omitted-methods:
-            - OPTIONS
-          patterns:
-            - /api/currency/exchange
+#    - authRoles:
+#        - USER
+#      securityCollections:
+#        - name: SERVICIOS DE USUARIO
+#          omitted-methods:
+#            - OPTIONS
+#          patterns:
+#            - /api/currency/exchange
