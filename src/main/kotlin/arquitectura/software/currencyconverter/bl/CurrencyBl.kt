@@ -5,7 +5,6 @@ import arquitectura.software.currencyconverter.dao.Currency
 import arquitectura.software.currencyconverter.dto.ErrorServiceDto
 import arquitectura.software.currencyconverter.dto.ResponseServiceDto
 import arquitectura.software.currencyconverter.exception.ServiceException
-import arquitectura.software.currencyconverter.proxy.CurrencyApiProxy
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
