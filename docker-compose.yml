@@ -6,7 +6,7 @@ services:
     ports:
       - "5433:5432"
     environment:
-      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - /home/ale/Desktop/postgres-arqui-2:/var/lib/postgresql/data
@@ -19,8 +19,8 @@ services:
     ports:
       - "8008:8008"
     environment:
-      URL: "${POSTGRES_URL}"
-      API_KEY: "${API_KEY}"
+      URL: ${POSTGRES_URL}
+      API_KEY: ${API_KEY}
     depends_on:
       - postgres
     networks:
