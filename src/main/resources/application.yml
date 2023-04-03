@@ -18,13 +18,13 @@ spring:
     name: currency-converter
 
 keycloak:
-  auth-server-url: http://localhost:8080
+  auth-server-url: http://192.168.1.44:8080
   autodetect-bearer-only: true
   realm: software
   resource: backend
   credentials:
     secret: 48PhN2WDKRDfifzCBYVloEH7GnaefCcF
-  ssl-required: external
+  ssl-required: none
   use-resource-role-mappings: false
   security-constraints:
     - authRoles:
@@ -35,11 +35,11 @@ keycloak:
             - OPTIONS
           patterns:
             - /api/currency/paginas
-#    - authRoles:
-#        - USER
-#      securityCollections:
-#        - name: SERVICIOS DE USUARIO
-#          omitted-methods:
-#            - OPTIONS
-#          patterns:
-#            - /api/currency/exchange
+    - authRoles:
+        - USER
+      securityCollections:
+        - name: SERVICIOS DE USUARIO
+          omitted-methods:
+            - OPTIONS
+          patterns:
+            - /api/currency/exchange

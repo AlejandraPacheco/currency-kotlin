@@ -1,11 +1,14 @@
 package arquitectura.software.currencyconverter.proxy
 
 import arquitectura.software.currencyconverter.bl.CurrencyBl
+import arquitectura.software.currencyconverter.dao.Currency
 import arquitectura.software.currencyconverter.dao.repository.CurrencyRepository
 import arquitectura.software.currencyconverter.dto.RequestServiceDto
 import arquitectura.software.currencyconverter.dto.ResponseServiceDto
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Component
 import java.math.BigDecimal
 import java.util.*
@@ -75,5 +78,10 @@ class CurrencyApiProxy(private val currencyBl: CurrencyBl, currencyRepository: C
             val result = currencyBl.exchangeRate(request.to, request.from, request.amount)
             LOGGER.info("Resultado de la solicitud pendiente: $result")
         }
+    }
+
+    override fun paginas(pageable: Pageable): Page<Currency> {
+        LOGGER.info("Usando proxy para obtener la lista de conversiones")
+        return super.paginas(pageable)
     }
 }

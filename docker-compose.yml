@@ -13,7 +13,7 @@ services:
     networks:
       - ale-network
   currency-converter:
-    image: currency:2.7.7
+    image: currency:2.9.2
     restart: always
     mem_limit: 512m
     ports:
@@ -26,7 +26,7 @@ services:
     networks:
       - ale-network
   angular:
-    image: angular-software:3.3.0-docker
+    image: angular-software:3.5.0-docker
     ports:
       - "4200:80"
     volumes:

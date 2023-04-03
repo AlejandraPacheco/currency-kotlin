@@ -1,6 +1,5 @@
 package arquitectura.software.currencyconverter.api
 
-import arquitectura.software.currencyconverter.bl.CurrencyBl
 import arquitectura.software.currencyconverter.dao.Currency
 import arquitectura.software.currencyconverter.dto.ResponseServiceDto
 import arquitectura.software.currencyconverter.proxy.CurrencyApiProxy
@@ -20,8 +19,7 @@ import java.math.BigDecimal
 
 @RequestMapping("/api/currency")
 @RestController
-class CurrencyApi @Autowired constructor(private val currencyBl: CurrencyBl,
-                                         private val currencyApiProxy: CurrencyApiProxy) {
+class CurrencyApi @Autowired constructor(private val currencyApiProxy: CurrencyApiProxy) {
 
     companion object {
         private val LOGGER: Logger = LoggerFactory.getLogger(CurrencyApi::class.java)
@@ -42,10 +40,11 @@ class CurrencyApi @Autowired constructor(private val currencyBl: CurrencyBl,
                 @RequestParam sort: String,
                 @RequestParam asc: Boolean):
             ResponseEntity<Page<Currency>> {
-                var currencyPage = currencyBl.paginas(
+                LOGGER.info("Iniciando peticion para obtener la lista de conversiones")
+                var currencyPage = currencyApiProxy.paginas(
                     PageRequest.of(page, size, Sort.by(sort)));
                 if (!asc)
-                    currencyPage = currencyBl.paginas(
+                    currencyPage = currencyApiProxy.paginas(
                         PageRequest.of(page, size, Sort.by(sort).descending()));
                 return ResponseEntity<Page<Currency>>(currencyPage, HttpStatus.OK);
             }
