@@ -1,0 +1,5 @@
+2023-04-03 00:35:29.599-0400 [http-nio-8008-exec-2]  INFO 5884 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para obtener la lista de conversiones
+2023-04-03 00:35:29.733-0400 [http-nio-8008-exec-2]  INFO 5884 --- [a.s.c.proxy.CurrencyApiProxy            ] : Usando proxy para obtener la lista de conversiones
+2023-04-03 00:35:57.734-0400 [http-nio-8008-exec-5]  INFO 5884 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para obtener la lista de conversiones
+2023-04-03 00:35:57.736-0400 [http-nio-8008-exec-5]  INFO 5884 --- [a.s.c.proxy.CurrencyApiProxy            ] : Usando proxy para obtener la lista de conversiones
+2023-04-03 00:37:26.960-0400 [SpringApplicationShutdownHook]  INFO 5884 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'

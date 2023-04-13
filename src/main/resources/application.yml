@@ -18,7 +18,7 @@ spring:
     name: currency-converter
 
 keycloak:
-  auth-server-url: http://192.168.1.44:8080
+  auth-server-url: http://172.18.18.134:8080
   autodetect-bearer-only: true
   realm: software
   resource: backend
@@ -43,3 +43,9 @@ keycloak:
             - OPTIONS
           patterns:
             - /api/currency/exchange
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # Actuator

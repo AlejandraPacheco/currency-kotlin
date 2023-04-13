@@ -1,5 +1,604 @@
-2023-04-03 00:35:29.599-0400 [http-nio-8008-exec-2]  INFO 5884 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para obtener la lista de conversiones
-2023-04-03 00:35:29.733-0400 [http-nio-8008-exec-2]  INFO 5884 --- [a.s.c.proxy.CurrencyApiProxy            ] : Usando proxy para obtener la lista de conversiones
-2023-04-03 00:35:57.734-0400 [http-nio-8008-exec-5]  INFO 5884 --- [a.s.currencyconverter.api.CurrencyApi   ] : Iniciando peticion para obtener la lista de conversiones
-2023-04-03 00:35:57.736-0400 [http-nio-8008-exec-5]  INFO 5884 --- [a.s.c.proxy.CurrencyApiProxy            ] : Usando proxy para obtener la lista de conversiones
-2023-04-03 00:37:26.960-0400 [SpringApplicationShutdownHook]  INFO 5884 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 01:08:51.580-0400 [main]  INFO 9640 --- [a.s.c.CurrencyConverterApplicationKt    ] : Starting CurrencyConverterApplicationKt using Java 17.0.5 on ale-Satellite-M645 with PID 9640 (/home/ale/Documents/ArquitecturaSoftware/currency-converter/target/classes started by root in /home/ale/Documents/ArquitecturaSoftware/currency-converter)
+2023-04-13 01:08:51.594-0400 [main]  INFO 9640 --- [a.s.c.CurrencyConverterApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-13 01:08:56.918-0400 [main]  INFO 9640 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 01:08:58.125-0400 [main]  INFO 9640 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 988 ms. Found 1 JPA repository interfaces.
+2023-04-13 01:09:01.337-0400 [main]  INFO 9640 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=7aeec5f7-72a0-3cc0-94cc-8e6f80e2382e
+2023-04-13 01:09:06.455-0400 [main]  INFO 9640 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-13 01:09:06.502-0400 [main]  INFO 9640 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-13 01:09:06.503-0400 [main]  INFO 9640 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-13 01:09:06.818-0400 [main]  INFO 9640 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-13 01:09:06.819-0400 [main]  INFO 9640 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 15015 ms
+2023-04-13 01:09:06.997-0400 [main] ERROR 9640 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/paginas] the HTTP methods [OPTIONS] are uncovered.
+2023-04-13 01:09:06.998-0400 [main] ERROR 9640 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/exchange] the HTTP methods [OPTIONS] are uncovered.
+2023-04-13 01:09:07.523-0400 [main]  INFO 9640 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 01:09:07.754-0400 [main]  INFO 9640 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-13 01:09:08.293-0400 [main]  INFO 9640 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 01:09:09.317-0400 [main]  INFO 9640 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-13 01:09:11.902-0400 [main]  INFO 9640 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 01:09:11.996-0400 [main]  INFO 9640 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 01:09:12.779-0400 [main]  WARN 9640 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 01:09:15.385-0400 [main]  INFO 9640 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-13 01:09:16.067-0400 [main]  WARN 9640 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-13 01:09:16.190-0400 [main]  INFO 9640 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-13 01:09:17.144-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-13 01:09:17.191-0400 [main]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:09:17.337-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-13 01:09:17.337-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-13 01:09:17.337-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-13 01:09:17.337-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-13 01:09:17.337-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-13 01:09:17.338-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-13 01:09:17.338-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-13 01:09:18.740-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-13 01:09:18.744-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-13 01:09:18.750-0400 [main]  INFO 9640 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-13 01:09:18.800-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681362558759 with initial instances count: 0
+2023-04-13 01:09:18.807-0400 [main]  INFO 9640 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-13 01:09:18.809-0400 [main]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681362558809, current=UP, previous=STARTING]
+2023-04-13 01:09:18.812-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008: registering service...
+2023-04-13 01:09:19.028-0400 [main]  INFO 9640 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-13 01:09:19.029-0400 [main]  INFO 9640 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 8008
+2023-04-13 01:09:19.126-0400 [main]  INFO 9640 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 30.572 seconds (JVM running for 32.623)
+2023-04-13 01:09:19.222-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008 - registration status: 204
+2023-04-13 01:09:48.745-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-13 01:09:48.745-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-13 01:09:48.745-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-13 01:09:48.746-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-13 01:09:48.746-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-13 01:09:48.746-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: false
+2023-04-13 01:09:48.746-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-13 01:09:48.768-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-13 01:14:17.341-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:19:17.342-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:24:17.660-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:29:17.661-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:34:17.664-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:39:17.665-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:44:17.685-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:49:17.686-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:54:17.687-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 01:59:17.688-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 02:04:17.689-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 02:09:17.692-0400 [AsyncResolver-bootstrap-executor-0]  INFO 9640 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 02:12:50.803-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [c.n.d.s.t.d.RedirectingEurekaHttpClient ] : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2023-04-13 02:12:50.804-0400 [DiscoveryClient-CacheRefreshExecutor-0]  WARN 9640 --- [c.n.d.s.t.d.RetryableEurekaHttpClient   ] : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2023-04-13 02:12:50.890-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [c.n.d.s.t.d.RedirectingEurekaHttpClient ] : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2023-04-13 02:12:50.891-0400 [DiscoveryClient-CacheRefreshExecutor-0]  WARN 9640 --- [c.n.d.s.t.d.RetryableEurekaHttpClient   ] : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2023-04-13 02:12:51.052-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-04-13 02:12:51.103-0400 [DiscoveryClient-HeartbeatExecutor-0]  INFO 9640 --- [c.n.d.s.t.d.RedirectingEurekaHttpClient ] : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 32 more
+
+2023-04-13 02:12:51.123-0400 [DiscoveryClient-HeartbeatExecutor-0]  WARN 9640 --- [c.n.d.s.t.d.RetryableEurekaHttpClient   ] : Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2023-04-13 02:12:54.005-0400 [DiscoveryClient-HeartbeatExecutor-0]  INFO 9640 --- [c.n.d.s.t.d.RedirectingEurekaHttpClient ] : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2023-04-13 02:12:54.006-0400 [DiscoveryClient-HeartbeatExecutor-0]  WARN 9640 --- [c.n.d.s.t.d.RetryableEurekaHttpClient   ] : Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2023-04-13 02:12:54.291-0400 [DiscoveryClient-HeartbeatExecutor-0] ERROR 9640 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-04-13 02:12:55.623-0400 [SpringApplicationShutdownHook]  INFO 9640 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-13 02:12:55.624-0400 [SpringApplicationShutdownHook]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681366375624, current=DOWN, previous=UP]
+2023-04-13 02:12:55.635-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008: registering service...
+2023-04-13 02:12:55.720-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 9640 --- [c.n.d.s.t.d.RedirectingEurekaHttpClient ] : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2023-04-13 02:12:55.720-0400 [DiscoveryClient-InstanceInfoReplicator-0]  WARN 9640 --- [c.n.d.s.t.d.RetryableEurekaHttpClient   ] : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2023-04-13 02:12:55.721-0400 [DiscoveryClient-InstanceInfoReplicator-0]  WARN 9640 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-04-13 02:12:55.721-0400 [DiscoveryClient-InstanceInfoReplicator-0]  WARN 9640 --- [c.n.discovery.InstanceInfoReplicator    ] : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-04-13 02:12:58.422-0400 [SpringApplicationShutdownHook]  INFO 9640 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 02:12:58.700-0400 [SpringApplicationShutdownHook]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-13 02:13:01.736-0400 [SpringApplicationShutdownHook]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-13 02:13:01.964-0400 [SpringApplicationShutdownHook]  INFO 9640 --- [c.n.d.s.t.d.RedirectingEurekaHttpClient ] : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+2023-04-13 02:13:01.965-0400 [SpringApplicationShutdownHook]  WARN 9640 --- [c.n.d.s.t.d.RetryableEurekaHttpClient   ] : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2023-04-13 02:13:01.965-0400 [SpringApplicationShutdownHook] ERROR 9640 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-04-13 02:13:02.030-0400 [SpringApplicationShutdownHook]  INFO 9640 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
+2023-04-13 10:58:24.306-0400 [main]  INFO 18595 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-13 10:58:32.277-0400 [main]  INFO 18595 --- [c.c.c.ConfigServicePropertySourceLocator] : Located environment: name=currency-converter, profiles=[test], label=null, version=a6b830da311479c1cb29690943cc409f55ed7e95, state=null
+2023-04-13 10:58:32.279-0400 [main]  INFO 18595 --- [b.c.PropertySourceBootstrapConfiguration] : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AlejandraPacheco/server-config.git/currency-converter-test.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AlejandraPacheco/server-config.git/currency-converter.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AlejandraPacheco/server-config.git/application.yml'}]
+2023-04-13 10:58:32.296-0400 [main]  INFO 18595 --- [a.s.c.CurrencyConverterApplicationKt    ] : The following 1 profile is active: "test"
+2023-04-13 10:58:34.245-0400 [main]  INFO 18595 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 10:58:34.716-0400 [main]  INFO 18595 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 446 ms. Found 1 JPA repository interfaces.
+2023-04-13 10:58:35.570-0400 [main]  INFO 18595 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=8bc0104b-29e7-3ad4-a25e-1936889227ea
+2023-04-13 10:58:37.379-0400 [main]  INFO 18595 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 7777 (http)
+2023-04-13 10:58:37.427-0400 [main]  INFO 18595 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-13 10:58:37.428-0400 [main]  INFO 18595 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-13 10:58:37.628-0400 [main]  INFO 18595 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-13 10:58:37.629-0400 [main]  INFO 18595 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 5278 ms
+2023-04-13 10:58:37.840-0400 [main] ERROR 18595 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/paginas] the HTTP methods [OPTIONS] are uncovered.
+2023-04-13 10:58:37.840-0400 [main] ERROR 18595 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/exchange] the HTTP methods [OPTIONS] are uncovered.
+2023-04-13 10:58:38.542-0400 [main]  INFO 18595 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 10:58:38.811-0400 [main]  INFO 18595 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-13 10:58:39.317-0400 [main]  INFO 18595 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 10:58:42.250-0400 [main]  INFO 18595 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-13 10:58:46.806-0400 [main]  INFO 18595 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 10:58:46.841-0400 [main]  INFO 18595 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 10:58:47.655-0400 [main]  WARN 18595 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 10:58:50.886-0400 [main]  INFO 18595 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-13 10:58:53.244-0400 [main]  WARN 18595 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-13 10:58:54.569-0400 [main]  INFO 18595 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-13 10:58:59.018-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-13 10:58:59.324-0400 [main]  INFO 18595 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 10:59:00.018-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-13 10:59:00.021-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-13 10:59:00.026-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-13 10:59:00.042-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-13 10:59:00.044-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-13 10:59:00.047-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-13 10:59:00.051-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-13 10:59:03.473-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-13 10:59:03.535-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-13 10:59:03.541-0400 [main]  INFO 18595 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-13 10:59:03.600-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681397943550 with initial instances count: 1
+2023-04-13 10:59:03.608-0400 [main]  INFO 18595 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-13 10:59:03.610-0400 [main]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681397943610, current=UP, previous=STARTING]
+2023-04-13 10:59:03.615-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:7777: registering service...
+2023-04-13 10:59:04.284-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:7777 - registration status: 204
+2023-04-13 10:59:04.772-0400 [main]  INFO 18595 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 7777 (http) with context path ''
+2023-04-13 10:59:04.773-0400 [main]  INFO 18595 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 7777
+2023-04-13 10:59:05.007-0400 [main]  INFO 18595 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 44.397 seconds (JVM running for 45.653)
+2023-04-13 11:00:21.624-0400 [SpringApplicationShutdownHook]  INFO 18595 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-13 11:00:21.625-0400 [SpringApplicationShutdownHook]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681398021625, current=DOWN, previous=UP]
+2023-04-13 11:00:21.625-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:7777: registering service...
+2023-04-13 11:00:21.661-0400 [SpringApplicationShutdownHook]  INFO 18595 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:00:21.664-0400 [SpringApplicationShutdownHook]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-13 11:00:21.785-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:7777 - registration status: 204
+2023-04-13 11:00:21.788-0400 [SpringApplicationShutdownHook]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-13 11:00:21.949-0400 [SpringApplicationShutdownHook]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:7777 - deregister  status: 200
+2023-04-13 11:00:21.957-0400 [SpringApplicationShutdownHook]  INFO 18595 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
+2023-04-13 11:30:25.001-0400 [main]  INFO 20529 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-13 11:30:34.489-0400 [main]  WARN 20529 --- [c.c.c.ConfigServicePropertySourceLocator] : Could not locate PropertySource: None of labels [] found
+2023-04-13 11:30:34.508-0400 [main]  INFO 20529 --- [a.s.c.CurrencyConverterApplicationKt    ] : The following 1 profile is active: "test"
+2023-04-13 11:30:36.800-0400 [main]  INFO 20529 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:30:37.293-0400 [main]  INFO 20529 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 424 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:30:38.232-0400 [main]  INFO 20529 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=8bc0104b-29e7-3ad4-a25e-1936889227ea
+2023-04-13 11:30:40.110-0400 [main]  INFO 20529 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-13 11:30:40.143-0400 [main]  INFO 20529 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-13 11:30:40.143-0400 [main]  INFO 20529 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-13 11:30:40.360-0400 [main]  INFO 20529 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-13 11:30:40.360-0400 [main]  INFO 20529 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 5788 ms
+2023-04-13 11:30:40.579-0400 [main] ERROR 20529 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/paginas] the HTTP methods [OPTIONS] are uncovered.
+2023-04-13 11:30:40.579-0400 [main] ERROR 20529 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/currency/exchange] the HTTP methods [OPTIONS] are uncovered.
+2023-04-13 11:30:41.408-0400 [main]  INFO 20529 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:30:41.642-0400 [main]  INFO 20529 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-13 11:30:42.125-0400 [main]  INFO 20529 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 11:30:43.462-0400 [main]  INFO 20529 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-13 11:30:44.747-0400 [main]  INFO 20529 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:30:44.783-0400 [main]  INFO 20529 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:30:45.563-0400 [main]  WARN 20529 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 11:30:48.349-0400 [main]  INFO 20529 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-13 11:30:49.403-0400 [main]  WARN 20529 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-13 11:30:49.475-0400 [main]  INFO 20529 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-13 11:30:50.488-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-13 11:30:50.595-0400 [main]  INFO 20529 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-13 11:30:50.807-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-13 11:30:50.808-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-13 11:30:50.808-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-13 11:30:50.808-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-13 11:30:50.808-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-13 11:30:50.808-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-13 11:30:50.809-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-13 11:30:52.114-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-13 11:30:52.133-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-13 11:30:52.138-0400 [main]  INFO 20529 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-13 11:30:52.154-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681399852151 with initial instances count: 1
+2023-04-13 11:30:52.164-0400 [main]  INFO 20529 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-13 11:30:52.167-0400 [main]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681399852167, current=UP, previous=STARTING]
+2023-04-13 11:30:52.171-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008: registering service...
+2023-04-13 11:30:52.281-0400 [main]  INFO 20529 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-13 11:30:52.283-0400 [main]  INFO 20529 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 8008
+2023-04-13 11:30:52.342-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008 - registration status: 204
+2023-04-13 11:30:52.459-0400 [main]  INFO 20529 --- [a.s.c.CurrencyConverterApplicationKt    ] : Started CurrencyConverterApplicationKt in 30.872 seconds (JVM running for 32.338)
+2023-04-13 11:35:00.441-0400 [SpringApplicationShutdownHook]  INFO 20529 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-13 11:35:00.558-0400 [SpringApplicationShutdownHook]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681400100558, current=DOWN, previous=UP]
+2023-04-13 11:35:00.558-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008: registering service...
+2023-04-13 11:35:00.565-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008 - registration status: 204
+2023-04-13 11:35:00.692-0400 [SpringApplicationShutdownHook]  INFO 20529 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:35:00.695-0400 [SpringApplicationShutdownHook]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-13 11:35:03.700-0400 [SpringApplicationShutdownHook]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-13 11:35:03.709-0400 [SpringApplicationShutdownHook]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/192.168.1.36:currency-converter:8008 - deregister  status: 200
+2023-04-13 11:35:03.718-0400 [SpringApplicationShutdownHook]  INFO 20529 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
